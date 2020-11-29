@@ -9,6 +9,8 @@ pipeline {
   stages {
     stage('Pre Check') {
       steps {
+        sh "pwd"
+        sh "whoami"
         sh "test -f ~/.docker/config.json"
         sh "cat ~/.docker/config.json | grep docker.io"
       }
