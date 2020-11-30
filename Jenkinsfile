@@ -11,8 +11,8 @@ pipeline {
       steps {
         sh "pwd"
         sh "whoami"
-        sh "test -f ~/jenkins_home/config.xml"
-        sh "cat ~/.docker/config.xml | grep docker.io"
+        sh "test -f ~/config.xml"
+        sh "cat ~/config.xml | grep docker.io"
       }
     }
     stage('Build') {
