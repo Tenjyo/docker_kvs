@@ -12,7 +12,7 @@ pipeline {
         sh "pwd"
         sh "whoami"
         sh "test -f ~/config.xml"
-        sh "cat ~/config.xml | grep docker.io"
+        sh "cat ~/config.xml | grep hudson"
       }
     }
     stage('Build') {
